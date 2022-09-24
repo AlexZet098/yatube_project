@@ -1,4 +1,4 @@
-"""post URL Configuration
+"""posts URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -21,6 +21,6 @@ app_name = 'post'
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('post/<pk>/', views.post_detail, name='post_detail'),
-    path('group/<slug:slug>/', views.group_posts, name='group_posts')
+    path('posts/<pk>/', views.post_detail, name='post_detail'),
+    path('group/<slug:slug>/', views.group_posts, name='group_list')
 ]
